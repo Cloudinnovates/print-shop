@@ -1,0 +1,29 @@
+/* -----  Examples ------ */
+
+
+/* This will align images to the left */
+
+#printfriendly img{
+    float:left;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+/* Changes font family and size */
+
+#printfriendly {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+/* Removes the header */
+
+#printfriendly #pf-src{
+     display:none;
+}
+
+​/* - Removes the title */
+
+h1#pf-title{
+    display:none;
+}

@@ -1,0 +1,612 @@
+@font-face {
+font-family: FontinSans;
+src: url("../Images/FontinRegular.otf") format("opentype");
+}
+
+body {
+font-family:FontinSans;
+padding:0px;
+margin:0px;
+background-color:#f0f0f0;
+text-align:center;
+width:100%;
+}
+
+header {
+position:relative;
+top:0px;
+left:0px;
+padding:0px;
+margin:0px;
+width:100%;
+height:207px;
+background-image:url('/Images/headerBG.jpg');
+background-size:100% 100%;
+background-repeat:no-repeat;
+text-align:left;
+}
+
+.headerTitle {
+position:absolute;
+bottom:10px;
+left:350px;
+color:white;
+font-size:3em;
+margin:0px;
+}
+
+.headerLogo {
+position:absolute;
+left:0px;
+bottom:0px;
+}
+
+#userAccount {
+position:absolute;
+right:0px;
+bottom:0px;
+height:120px;
+}
+
+.userPhoto {
+display:inline-block;
+vertical-align:text-top;
+width:120px;
+height:120px;
+}
+
+.usernameText {
+display:inline-block;
+vertical-align:text-top;
+color:white;
+font-size:1.5em;
+padding:0px;
+margin:0px 25px 0px 10px;
+}
+
+.usernameText a{
+color:white;
+text-decoration:none;
+}
+
+nav {
+position:relative;
+width:100%;
+height:35px;
+background-color:#cc3333;
+}
+
+#navLinks {
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+
+.navLink {
+padding:0px;
+margin:0px;
+font-size:1.3em;
+text-decoration:none;
+color:white;
+}
+
+.navLink li {
+padding:5px 5px 0px 5px;
+margin-left:30px;
+display:inline-block;
+height:30px;
+}
+
+.navLink li:hover {
+background-color:#993333;
+}
+
+#wrapper {
+position:relative;
+margin:0px;
+padding:0px;
+width:100%;
+}
+
+#leftContent {
+position:absolute;
+top:0px;
+left:0px;
+padding:0px;
+margin:0px;
+width:300px;
+min-height:650px;
+background-image:url('../Images/sideNavBG.jpg');
+}
+
+#sideLinks {
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+
+.sideLink {
+text-decoration:none;
+color:white;
+font-size:1.5em;
+padding:0px;
+margin:0px;
+}
+
+.sideLink li {
+display:block;
+height:30px;
+width:300px;
+border-bottom:1px solid black;
+padding-top:5px;
+margin:0px;
+text-align:center;
+}
+
+.sideLink li:hover {
+background-color:#cc3333;
+}
+
+#rightContent {
+position:absolute;
+top:0px;
+left:300px;
+max-width:700px;
+text-align:left;
+padding:20px;
+}
+
+.rightTextLink {
+font-size:18px; text-decoration:none;
+}
+
+table {
+margin:0px;
+}
+
+.tableColHeading {
+font-size:1.3em;
+font-weight:bold; 
+text-align:center;
+background-color:#cc3333;
+color:white;
+}
+
+th, td{
+border-style:none;
+border-bottom:1px solid black;
+padding:5px;
+}
+
+/* Styles for Invoice Application */
+  #orderBox {
+	position:fixed; 
+	top:242px; 
+	left:1000px; 
+	text-align:center;
+	width:250px; 
+	max-height:400px;
+	overflow-y:scroll;
+  }
+  #generateButton {
+	  display:block;
+	  width:150px;
+	  height:30px;
+	  margin: 0 auto;
+	  text-decoration:none;
+	  color:black;
+	  font-size:18px;
+	  border:2px solid black;
+	  background-color:#66FF33;
+  }
+  #generateButton:hover {
+	  color:white;
+	  background-color:#33CC33;
+  }
+  .orderText {
+	  font-size:.8em;
+	  text-align:left;
+	  margin:0px 0px 5px 0px;
+  }
+  .hiddenCheckBox {
+	  visibility:hidden;
+  }
+  
+  /* For View Completed Invoices Page */
+  .poLink {
+  text-decoration:none;
+  }
+  
+  #printButton {
+  float:right;
+  font-size:1.4em;
+  }
+  
+  /* To Remove Print Friendly Header */
+  /* Removes the header */
+#printfriendly #pf-src{
+     display:none;
+}
+
+​/* - Removes the title */
+
+#printfriendly #pf-title{
+    display:none;
+}
+ /* End Invoice Application Styles */
+ 
+ 
+ /* ---Print Shop Specific Styles--- */
+ #page-description {
+ position:relative;
+ width:700px;
+ }
+ 
+ #continueBtn {
+ cursor:pointer;
+ color:blue;
+ font-size:1.2em;
+ text-decoration:none;
+ }
+ 
+ #page-description  a{
+text-decoration:none;
+font-size:1.2em;
+text-align:right;
+ }
+ /* Home Page Styles */
+ #announcements {
+ background-color:#FFB3B3; 
+ border:2px solid red; 
+ padding:5px;
+ }
+ 
+ #left-column {
+ float:left;
+ width:290px;
+ height:400px;
+ }
+ 
+ #common-questions {
+ 
+ }
+ 
+ .question-link {
+ margin:0px 0px 0px 0px;
+ color:blue;
+ font-size:1.2em;
+ display:block;
+ }
+ 
+ #right-column {
+ float:right;
+ width:400px;
+ height:400px;
+ }
+ 
+ #contact-form {
+ padding:10px 20px 0px 25px;
+ background-image:url('../Images/contact-form.jpg');
+ background-repeat:no-repeat;
+ height:400px;
+ font-size:1.2em;
+ }
+ 
+ .contact-title {
+ font-size:2em;
+ margin:10px 0px 10px 0px;
+ }
+ 
+ #home-submit {
+ float:right;
+ margin-right:16px;
+ }
+ 
+  /* End Home Page Specific Styles */
+ #top-button {
+	position:fixed;
+	top:350px;
+	left:1100px;
+ }
+ 
+ #print-products{
+ position:relative;
+ width:700px;
+ }
+
+.print-product-image {
+display:inline-block;
+vertical-align:text-top;
+}
+
+ .print-products {
+ display:inline-block;
+ vertical-align:text-top;
+ margin-left:10px;
+ }
+ 
+ .print-product {
+ margin-bottom:5px;
+ }
+ 
+ .print-product-description { 
+ font-size:.8em;
+ margin:5px 0px 5px 0px;
+ }
+
+ .radio-product {
+ vertical-align:middle;
+ }
+ 
+  .print-product-icon {
+ vertical-align:middle;
+ }
+
+ .product-pricing {
+ font-size:1.3em;
+ }
+ 
+ .active-step {
+ font-weight:bold;
+ text-decoration:underline;
+ }
+ /* Print Shop Options Page Styles */
+ .style-thumb {
+ margin:10px;
+ display:inline;
+ }
+ 
+ .style-thumb-active {
+ margin:10px;
+ display:inline;
+ border:2px solid black;
+ }
+
+ /* End Print Shop Options Page Styles */
+ 
+ /* Print Shop Products Page Specific Styles */
+ .data-tool {
+ display:inline-block; 
+ }
+ 
+ #product-list {
+ position:relative;
+ width:100%;
+ }
+ 
+ #selected-products {
+ position:absolute;
+ top:0px;
+ right:0px;
+ width:250px;
+ border-left:1px solid black;
+ border-right:1px solid black;
+ text-align:center;
+ }
+ 
+ .product-image {
+ width:25%;
+ height:25%;
+ vertical-align:middle;
+ }
+ 
+ .product {
+ width:440px;
+ border-bottom:1px solid black;
+ }
+ 
+ .product-text {
+ display:inline-block;
+ font-size:.8em;
+ max-width:300px;
+ max-height:95px;
+ vertical-align:middle;
+ overflow-y:auto;
+ }
+ 
+ .product-check {
+ vertical-align:middle;
+ }
+ 
+ .selectBtn {
+ font-size:.9em;
+ color:blue;
+ cursor:pointer;
+ text-decoration:none;
+ }
+ /* End Products Page Specific Styles /*
+ 
+ /* Layout Page Specific Styles */
+ #headline-list {
+ position:relative;
+ width:100%;
+ }
+ 
+ #charRemaining {
+ font-size:.8em;
+ }
+ 
+ #product-pricing {
+ position:absolute;
+ top:0px;
+ right:0px;
+ width:250px;
+ text-align:center;
+ }
+ /* End Layout Page Specific Styles */
+ 
+ /* projectsHome Page Specific Styles */
+ #user-cart-title {
+ width:100%;
+ height:30px;
+ background-image:url("../Images/user-cart-title-bg.png");
+ background-repeat:repeat-x;
+ font-size:1.8em;
+ }
+ 
+ #cart-total-line {
+ text-align:right;
+ margin:5px 20px 5px 5px;
+ }
+ 
+ #user-cart-list {
+ width:695px;
+ border:1px solid #cc3333;
+ }
+ 
+ .user-cart:nth-child(odd) {
+ position:relative;
+ width:685px;
+ height:45px;
+ padding:0px 0px 5px 10px;
+ }
+ 
+ .user-cart:nth-child(even) {
+ position:relative;
+ width:685px;
+ height:45px;
+ background-color:#ffcccc;
+ padding:0px 0px 5px 10px;
+ }
+ 
+ .user-cart-desc {
+ position:absolute;
+ height:45px;
+ margin:0px;
+ font-size:.9em;
+ }
+ 
+  .user-cart-desc p{
+ margin: 5px 0px 5px 0px;
+ }
+ 
+ .user-cart-options {
+ position:absolute;
+ top:0px;
+ left:310px;
+ width:380px;
+ height:40px;
+ font-size:1em;
+ text-align:right;
+ margin-right:20px;
+ }
+ 
+ .user-cart-options p{
+ margin:5px;
+ }
+ 
+ #project-list-title {
+ width:100%;
+ height:30px;
+ background-image:url("../Images/user-cart-title-bg.png");
+ background-repeat:repeat-x;
+ font-size:1.8em;
+ }
+ 
+ #project-list {
+ width:695px;
+ border:1px solid #cc3333;
+ }
+
+ .print-project:nth-child(odd) {
+ position:relative;
+ width:685px;
+ height:80px;
+ padding:0px 0px 5px 10px;
+ }
+ 
+ .print-project:nth-child(even) {
+ position:relative;
+ width:685px;
+ height:80px;
+ background-color:#ffcccc;
+ padding:0px 0px 5px 10px;
+ }
+ 
+ .print-project-desc {
+ position:absolute;
+ width:300px;
+ margin:0px;
+ }
+ 
+ .print-project-options {
+ position:absolute;
+ top:0px;
+ left:310px;
+ width:380px;
+ }
+ 
+ .print-project-desc p {
+ margin:5px 0px 0px 0px;
+ }
+ 
+ .project-link {
+ font-size:1.2em;
+ }
+ 
+ .project-product {
+ font-size:.8em;
+ }
+ 
+ #cart-total-line {
+ vertical-align:middle;
+ }
+ 
+ #checkoutBtn {
+ margin-left:5px;
+ vertical-align:middle;
+ }
+ 
+ #infoCorrect {
+ color:green;
+ size:1em;
+ }
+ 
+ .important-text {
+ color:red;
+ }
+ 
+ .success-text {
+ font-size:3em;
+ text-align:center;
+ color:green;
+ padding:0px;
+ margin:0px;
+ }
+
+ /* End projectsHome Page Specific Styles */
+ 
+  /* Reports Specific Styles */
+ .em-number {
+	font-size:1.3em;
+	font-weight:bold;
+	color:#2e2e2e;
+ }
+ 
+ .em-percent-inc {
+	font-size:1.3em;
+	font-weight:bold; 
+	color:#00b300;
+ }
+ 
+ .em-percent-dec {
+	font-size:1.3em;
+	font-weight:bold; 
+	color:#ff1a1a;
+ }
+ 
+ 
+ 
+  /* ---End Reports Specific Styles--- */
+  
+ /* ---End Print Shop Specific Styles--- */
+ 
+@media screen and (max-width: 380px) {
+}
+@media screen and (min-width: 381px) and (max-width: 500px) {
+}
+@media screen and (min-width: 501px) and (max-width: 959px) {
+}
+@media screen and (min-width: 960px) {
+
+}

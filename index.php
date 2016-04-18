@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../../functions.php';
-
+// Added this line hot fix
 $conn = connect_DB();
 
 $user_details = validate_user($conn);
